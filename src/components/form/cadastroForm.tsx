@@ -37,7 +37,6 @@ export function Cadastro({clickFn}:Props) {
     const addClassificacaoChange = (e: ChangeEvent<HTMLSelectElement>) => {
         setAddClassificacaoText(e.target.value);
     }
-    }
     return(
         <CadastroStyle>
             <span>CADASTRE-SE</span>
