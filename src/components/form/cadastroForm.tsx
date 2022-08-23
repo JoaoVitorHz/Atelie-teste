@@ -37,23 +37,6 @@ export function Cadastro({clickFn}:Props) {
     const addClassificacaoChange = (e: ChangeEvent<HTMLSelectElement>) => {
         setAddClassificacaoText(e.target.value);
     }
-    //Função que passa os valores para o Hook de envio do formulario 
-    const handleAddClick = async(texto: { preventDefault: () => void; }) =>{
-        texto.preventDefault();
-        let response: any = useFetch(
-            addNameText, 
-            addEmailText,
-            addCpfText, 
-            addPasswordText, 
-            addConfirmPasswordText, 
-            addEmpresaText, 
-            addClassificacaoText
-        )
-        if(response === true){
-            alert("Usuario cadastro com sucesso")
-        } else {
-           alert("algo deu errado")
-        }
     }
     return(
         <CadastroStyle>
@@ -102,7 +85,7 @@ export function Cadastro({clickFn}:Props) {
                             <span onClick={clickFn}>Você já tem um cadastro?</span>
                          </div>
                         <div className="buttonForm">
-                            <button type="submit" onClick={handleAddClick}>ENVIAR</button>
+                            <button type="submit">ENVIAR</button>
                         </div>
                 </form>
             
