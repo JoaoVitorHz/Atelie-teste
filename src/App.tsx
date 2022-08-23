@@ -3,7 +3,7 @@ import { Form } from './components/form/form'
 import { Footer } from './components/footer/footer';
 import GlobalStyles from './globalStyles';
 
-function App(txt: string) {
+function App() {
   return (
     <div className="App">
       <GlobalStyles />
