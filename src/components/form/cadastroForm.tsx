@@ -1,6 +1,5 @@
 import { CadastroStyle } from "./css/cadastroStyle"
 import {useState, ChangeEvent} from 'react'
-import { useFetch } from "../../hooks/useFetch";
 
 //tipando a função
 type Props ={
